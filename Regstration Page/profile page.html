@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-image: url('loginpic.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+</style>
+<script>
+  function validateForm() {
+  let x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  
+  
+ 
+}
+</script>
+</head>
+<body>
+<center>
+<h1> WELCOME HELLO!!</h1>
+<form name="myForm" action="#" method="get" onsubmit="return validateForm()">
+  <label for="Location">Location:</label>
+  <select name="Location" id="Location">
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Chennai">Chennai</option>
+   <option value="Banglore">Banglore</option>
+    <option value="Others">Others</option>
+  </select><br><br>
+<label for="Occupation">Occupation:</label>
+ <select name="Occupation" id="Occupation">
+    <option value="Student">Student</option>
+    <option value="Proffesional">Proffesional</option>
+  </select><br><br>
+  <label for="Proffesional">Select Proffesion if u are working</label>
+  <select name="Profesional" id="Professional">
+    <option value="Engineering">Engineering</option>
+    <option value="Bussiness">Bussiness</option>
+    <option value="Management">Management</option>
+    <option value="NA">Not Applicable</option>
+  </select>
+<br><br>
+ <label for="YExp">Years of Experience</label>
+ <select name="YExp" id="YExp">
+    <option value="<1"><1</option>
+    <option value="2-5">2-5</option>
+    <option value="5-10">5-10</option>
+    <option value=">10">more than 10</option>
+  </select><br><br>
+
+<label for="Specialization areas">Specialization areas:</label>
+  <select name="Specialization areas" id="Specialization areas" multiple>
+    <option value="Web development">Web development</option>
+    <option value="Data Science">Data Science</option>
+<option value="AI/ML">AI/ML</option>
+<option value="Cloud Computing">Cloud Computing</option>
+    <option value="Digital Marketing">Digital Marketing</option>
+<option value="Cyber Security">Cyber Security</option>
+<option value="Schools & Bootcamps">Schools & Bootcamps</option>
+    <option value="Android">Android</option>
+<option value="Accounting">Accounting</option>
+<option value="Entrepreneurship & Business">Entrepreneurship & Business</option>
+    <option value="Leadership Quality">Leadership Quality</option>
+<option value="Student">Student</option>
+<option value="Teaching">Teaching</option>
+    <option value="Mental health">Mental health</option>
+<option value="Content Writer/Editor">Content Writer/Editor</option>
+  </select>
+  <br><br>     
+
+ <label for="Mentoring">Have You Mentored Before:</label>
+ <input type="radio" id="Yes" name="Mentoring" value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No" name="Mentoring" value="No">
+<label for="No">No</label><br><br>
+
+<label for="others">Have you done any other work?</label>
+<textarea id="others" name="others" rows="5" cols="30">
+</textarea>
+
+  <input type="submit" value="Submit">
+ 
+</form>
+<center>
+</body>
+</html>
